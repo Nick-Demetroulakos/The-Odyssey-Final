@@ -37,7 +37,7 @@
       <img onclick="animatedScroll('#court')" src="path.png" class="red_end" alt="">
     </div>
     <div class="content">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Graecia_Vetus_Map_of_Ancient_Greece.jpg" id="map" width=700px alt="A map of ancient Greece">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Graecia_Vetus_Map_of_Ancient_Greece.jpg" id="map" width=700 alt="A map of ancient Greece">
 
       <div id="cicones" class="step">
         <h3>The Cicones</h3>
@@ -111,48 +111,22 @@
         that his crew should not eat the cattle. At first this is fine, but the crew is becalmed on the island, and as supplies run out, they turn to the cattle. They eat the cattle.
         Helios is furious, and when the ship finally sets out again, it is totally destoryed in a storm. Only Odysseus survives by clining onto a piece of wood.</p>
       </div>
-      <div id="whirlpool" class="step" class="leftside">
+      <div id="whirlpool" class="step">
         <h3>Whirlpool</h3>
         <p>Odysseus is swept all the way back to Charybdis, who is in the process of creating a whirlpool. He narrowly escapes by clinging on to a fig tree
         that extends its branches out over the water. After the whirlpool subsides, Odysseus falls back into the water.</p>
       </div>
-      <div id="calypso" class="step" class="leftside">
+      <div id="calypso" class="step">
         <h3>Calypso</h3>
         <p>He is eventually carried to yet another island. This island is inhabited by a minor goddess named Calypso, who keeps Odysseus captive for 7 years. Eventually
         she is compelled to let him leave. She helps him build a raft and sends him on his way.</p>
       </div>
-      <div id="court" class="step" class="leftside">
+      <div id="court" class="step">
         <h3>Phaeacian Court</h3>
         <p>A storm comes, and destroys Odysseus' raft. He is swept to the island of the Phaeacians. They listen to his story, and carry him safely home to Ithica. </p>
       </div>
     </div>
-    <script>
-      /*learned on W3schools (includes stuff in CSS under navbar and adhesive)*/
-      window.onscroll = function() {stickyBar()};
-
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
-
-      function stickyBar() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("adhesive")
-          /*If the y positon of the nav bar is less than or equal to the value of var sticky,
-          then the class adhesive is added to navbar, changing it's postion to fixed, such that it
-          moves with the page*/
-        } else {
-          navbar.classList.remove("adhesive");
-        }
-      }
-      /*Miles McCain helped with trouble shooting for the below function*/
-      /*Learned about this here:http://www.robertprice.co.uk/robblog/using-jquery-to-scroll-to-an-element/*/
-      function animatedScroll(place) {
-        $("html").animate({
-          /*grabs the entire code, and asks for an animate. Creates an object by grabbing the place (the id specified above) and then executing
-          an offsets it from the top by the height of the navbar and 100 extra pixels*/
-          scrollTop: ($(place).offset().top-($("#navbar").height()+100))
-          },500);
-        }
-  </script>
-  </body>
+    <script src="journey.js"></script>
   <footer>Created for Comp-Sci 450 by Nick Demetroulakos. Map from wikimedia commons</footer>
+  </body>
 </html>
