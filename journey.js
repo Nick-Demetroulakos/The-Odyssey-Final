@@ -22,4 +22,6 @@ function animatedScroll(place) {
     an offsets it from the top by the height of the navbar and 100 extra pixels*/
     scrollTop: ($(place).offset().top-($("#navbar").height()+100))
     },500);
+  $(place).css('opacity', 1.0)
+
   }
