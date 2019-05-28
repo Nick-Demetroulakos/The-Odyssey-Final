@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'diogenesregular';
+    src: url('diogenes-webfont.woff2') format('woff2'),
+         url('diogenes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  text-align: center;
+  font-family: 'diogenesregular';
+  background-image: url(https://images.unsplash.com/photo-1520299607509-dcd935f9a839?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+  display: inline-block;
+  color: rgb(66, 65, 63);
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=680), auto;
+}
+
+h1 {
+  background-color: rgb(214, 187, 130);
+  margin: 10px;
+  padding: 10px 10px;
+  display: inline-block;
+  border: 10px solid transparent;
+  border-image: url(border.png) 200 round;
+  font-size: 100px;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  background-color: rgb(214, 187, 130);
+  display: inline-block;
+  padding: 10px;
+  border: 10px solid transparent;
+  border-image: url(border.png) 200 round;
+}
+
+p {
+  background-color: rgb(214, 187, 130);
+  margin: 10px 50px;
+  padding: 15px;
+  border: 10px solid transparent;
+  border-image: url(border.png) 200 round;
+}
+
+button {
+  background-color: rgb(214, 187, 130);
+  padding: 15px;
+  border: 10px solid transparent;
+  border-image: url(border.png) 200 round;
+  font-family: 'diogenesregular';
+  color: rgb(66, 65, 63);
+  font-size: 20px;}
+
+footer {
+  background-color: rgb(214, 187, 130);
+  margin-top: 30px;
+}
+
+  button:focus {
+    outline:0;
+  }
+
+  button:hover {
+    box-shadow: 5px 5px 5px;
+    transform: scale(1.25, 1.25);
+  }
