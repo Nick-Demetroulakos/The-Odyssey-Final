@@ -91,3 +91,13 @@ footer {
   background-color: rgb(214, 187, 130);
   padding: 10px;
 }
+
+#instruct {
+  background-color: rgb(214, 187, 130);
+  display: inline-block;
+  border: 10px solid transparent;
+  border-image: url(border.png) 200 round;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+}
