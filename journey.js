@@ -23,5 +23,5 @@ function animatedScroll(place) {
     scrollTop: ($(place).offset().top-($("#navbar").height()+100))
     },500);
   $(place).fadeTo(1000, 1.0);
-  /*jquery css from W3schools*/
+  /*fadeTo learned from W3schools*/
   }
