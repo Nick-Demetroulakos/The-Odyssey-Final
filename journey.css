@@ -59,6 +59,7 @@ footer {
   border: 10px solid transparent;
   border-image: url(border.png) 200 round;
   margin-right: 7px;
+  z-index: 1;
 }
 
 .adhesive {
